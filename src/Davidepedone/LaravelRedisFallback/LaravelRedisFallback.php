@@ -33,7 +33,10 @@ class LaravelRedisFallback extends CacheManager
 
             return $this->repository($store);
         } catch (Exception $e) {
-            return parent::createFileDriver();
+            
+            $config = $this->getConfig('file');
+            
+            return parent::createFileDriver($config);
         }
     }
 }
