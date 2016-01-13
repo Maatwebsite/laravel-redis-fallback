@@ -5,6 +5,7 @@ namespace Davidepedone\LaravelRedisFallback;
 use Exception;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Cache\RedisStore;
+use Illuminate\Support\Arr;
 
 /**
  * @author Davide Pedone <davide.pedone@gmail.com>
